@@ -51,12 +51,6 @@
     <Filter Include="Header files\basic_system\delay">
       <UniqueIdentifier>{0e5406d7-42aa-4c98-b8d5-1b54a976bfcf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source files\basic_system\usart">
-      <UniqueIdentifier>{3544ccf1-4bdd-48af-a5fe-dd8b81e6eda4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header files\basic_system\usart">
-      <UniqueIdentifier>{52762005-fd48-42dd-923d-1ff12e7ccdef}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source files\software">
       <UniqueIdentifier>{96d98002-8f37-432b-9da3-f9febea39202}</UniqueIdentifier>
     </Filter>
@@ -100,9 +94,6 @@
     </ClCompile>
     <ClCompile Include="basic_system\delay\delay.c">
       <Filter>Source files\basic_system\delay</Filter>
-    </ClCompile>
-    <ClCompile Include="basic_system\usart\usart.c">
-      <Filter>Source files\basic_system\usart</Filter>
     </ClCompile>
     <ClCompile Include="software\cpp_buf\cpp_buf.cpp">
       <Filter>Source files\software\cpp_buf</Filter>
@@ -151,11 +142,11 @@
     <ClInclude Include="basic_system\delay\delay.h">
       <Filter>Header files\basic_system\delay</Filter>
     </ClInclude>
-    <ClInclude Include="basic_system\usart\usart.h">
-      <Filter>Header files\basic_system\usart</Filter>
-    </ClInclude>
     <ClInclude Include="basic_system\cpp_interface\cpp_interface.hpp">
       <Filter>Header files\basic_system\cpp_interface</Filter>
+    </ClInclude>
+    <ClInclude Include="software\cpp_buf\cpp_buf.hpp">
+      <Filter>Header files\software\cpp_buf</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

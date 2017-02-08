@@ -8,15 +8,15 @@ int main()
 {
 	char *tmp = NULL ;
 	delay_init(72) ;	
-	usart1.setReceiveMode(1) ;
-	printf1("ready\r\n") ;
+	usart1.receiveMode = 1 ;
+	usart1.print("ready\r\n") ;
 	while(1){
 		delay_ms(10) ;
-		if(usart1.isBufCanBeRead() == true){
+		if(usart1.isBufCanBeRead == true){
 			tmp = usart1.getBufPtr()->turn2String() ;
-			printf1(tmp) ;
+			usart1.print(tmp) ;
 			delete tmp ;
-			usart1.setBufReadStatus(false) ;
+			usart1.isBufCanBeRead = false ;
 			usart1.cleanBuf();
 		}
 	}

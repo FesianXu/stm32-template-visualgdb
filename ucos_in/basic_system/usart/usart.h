@@ -18,10 +18,6 @@
 #define Rx2Length 100
 #define Rx3Length 100
 
-void USART1_Init(u32 bound);
-void USART2_Init(u32 bound);
-void USART3_Init(u32 bound);
-
 void printf1(char *fmt, ...);
 void printf2(char *fmt, ...);
 void printf3(char *fmt, ...);

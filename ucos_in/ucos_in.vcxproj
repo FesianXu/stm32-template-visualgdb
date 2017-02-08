@@ -69,7 +69,6 @@
     <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" />
     <ClCompile Include="basic_system\cpp_interface\cpp_interface.cpp" />
     <ClCompile Include="basic_system\delay\delay.c" />
-    <ClCompile Include="basic_system\usart\usart.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="software\cpp_buf\cpp_buf.cpp" />
     <ClCompile Include="system_stm32f10x.c" />
@@ -92,7 +91,7 @@
     <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h" />
     <ClInclude Include="basic_system\cpp_interface\cpp_interface.hpp" />
     <ClInclude Include="basic_system\delay\delay.h" />
-    <ClInclude Include="basic_system\usart\usart.h" />
+    <ClInclude Include="software\cpp_buf\cpp_buf.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="stm32.xml" />
