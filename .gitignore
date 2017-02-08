@@ -1,0 +1,16 @@
+# ignore debug files
+/Debug
+/ucos_in/Debug
+
+
+# ignore visual studio's go-back files
+*.sdf
+*.opensdf
+
+# ignore obj files
+/ucos_in/obj
+*.o
+*.dep
+
+
+
