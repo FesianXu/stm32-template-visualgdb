@@ -12,5 +12,7 @@
 *.o
 *.dep
 
+# workspace files
+*.suo
 
 
