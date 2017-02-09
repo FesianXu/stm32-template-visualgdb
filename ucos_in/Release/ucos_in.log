@@ -1,0 +1,19 @@
+﻿生成启动时间为 2017/2/8 23:11:57。
+     1>项目“C:\Users\Administrator\Desktop\ucos_in\ucos_in\ucos_in.vcxproj”在节点 2 上(Build 个目标)。
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "C:\Users\Administrator\Desktop\ucos_in\ucos_in\ucos_in.vcxproj" "/solution:C:\Users\Administrator\Desktop\ucos_in\ucos_in.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "cmd.exe /c "G:\arm-eabi-4.4.0\bin\make.exe" CONFIG=Release" in directory "C:\Users\Administrator\Desktop\ucos_in\ucos_in" on local computer
+         make: *** No rule to make target `C:\Users\Administrator\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport/core_cm3.c', needed by `Release/core_cm3.o'.  Stop.
+         -------------------------------------------------------------
+         Command exited with code 2
+         Executable: cmd.exe
+         Arguments: /c "G:\arm-eabi-4.4.0\bin\make.exe" CONFIG=Release
+         Directory: C:\Users\Administrator\Desktop\ucos_in\ucos_in
+     1>VisualGDB : error : Command-line action failed
+     1>EXEC : error : Build has failed. See the Output window for more details.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.MakeFile.Targets(38,5): error MSB3073: 命令“"C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "C:\Users\Administrator\Desktop\ucos_in\ucos_in\ucos_in.vcxproj" "/solution:C:\Users\Administrator\Desktop\ucos_in\ucos_in.sln" "/config:Release" "/platform:Win32"”已退出，代码为 1。
+     1>已完成生成项目“C:\Users\Administrator\Desktop\ucos_in\ucos_in\ucos_in.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.19
