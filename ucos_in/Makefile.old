@@ -35,7 +35,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := ../core/core_cm3.c ../core/startup_stm32f103xe.c ../stdPeriphLib/src/misc.c ../stdPeriphLib/src/stm32f10x_adc.c ../stdPeriphLib/src/stm32f10x_bkp.c ../stdPeriphLib/src/stm32f10x_can.c ../stdPeriphLib/src/stm32f10x_cec.c ../stdPeriphLib/src/stm32f10x_crc.c ../stdPeriphLib/src/stm32f10x_dac.c ../stdPeriphLib/src/stm32f10x_dbgmcu.c ../stdPeriphLib/src/stm32f10x_dma.c ../stdPeriphLib/src/stm32f10x_exti.c ../stdPeriphLib/src/stm32f10x_flash.c ../stdPeriphLib/src/stm32f10x_fsmc.c ../stdPeriphLib/src/stm32f10x_gpio.c ../stdPeriphLib/src/stm32f10x_i2c.c ../stdPeriphLib/src/stm32f10x_iwdg.c ../stdPeriphLib/src/stm32f10x_pwr.c ../stdPeriphLib/src/stm32f10x_rcc.c ../stdPeriphLib/src/stm32f10x_rtc.c ../stdPeriphLib/src/stm32f10x_sdio.c ../stdPeriphLib/src/stm32f10x_spi.c ../stdPeriphLib/src/stm32f10x_tim.c ../stdPeriphLib/src/stm32f10x_usart.c ../stdPeriphLib/src/stm32f10x_wwdg.c basic_system/cpp_interface/cpp_interface.cpp basic_system/delay/delay.c main.cpp software/cpp_buf/cpp_buf.cpp system_stm32f10x.c
+SOURCEFILES := ../STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport/core_cm3.c ../STM32F1xxxx/StartupFiles/startup_stm32f103xe.c ../STM32F1xxxx/STM32F10x_StdPeriph_Driver/src/misc.c basic_system/cpp_interface/cpp_interface.cpp basic_system/delay/delay.c basic_system/sys/sys.c main.cpp software/cpp_buf/cpp_buf.cpp system_stm32f10x.c
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 
@@ -181,103 +181,15 @@ $(BINARYDIR)/%.o : %.cxx $(all_make_files) |$(BINARYDIR)
 #VisualGDB: GeneratedRules				#<--- All lines below are auto-generated
 
 
-$(BINARYDIR)/core_cm3.o : ../core/core_cm3.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/core_cm3.o : ../STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport/core_cm3.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/startup_stm32f103xe.o : ../core/startup_stm32f103xe.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/startup_stm32f103xe.o : ../STM32F1xxxx/StartupFiles/startup_stm32f103xe.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
-$(BINARYDIR)/misc.o : ../stdPeriphLib/src/misc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_adc.o : ../stdPeriphLib/src/stm32f10x_adc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_bkp.o : ../stdPeriphLib/src/stm32f10x_bkp.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_can.o : ../stdPeriphLib/src/stm32f10x_can.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_cec.o : ../stdPeriphLib/src/stm32f10x_cec.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_crc.o : ../stdPeriphLib/src/stm32f10x_crc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_dac.o : ../stdPeriphLib/src/stm32f10x_dac.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_dbgmcu.o : ../stdPeriphLib/src/stm32f10x_dbgmcu.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_dma.o : ../stdPeriphLib/src/stm32f10x_dma.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_exti.o : ../stdPeriphLib/src/stm32f10x_exti.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_flash.o : ../stdPeriphLib/src/stm32f10x_flash.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_fsmc.o : ../stdPeriphLib/src/stm32f10x_fsmc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_gpio.o : ../stdPeriphLib/src/stm32f10x_gpio.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_i2c.o : ../stdPeriphLib/src/stm32f10x_i2c.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_iwdg.o : ../stdPeriphLib/src/stm32f10x_iwdg.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_pwr.o : ../stdPeriphLib/src/stm32f10x_pwr.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_rcc.o : ../stdPeriphLib/src/stm32f10x_rcc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_rtc.o : ../stdPeriphLib/src/stm32f10x_rtc.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_sdio.o : ../stdPeriphLib/src/stm32f10x_sdio.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_spi.o : ../stdPeriphLib/src/stm32f10x_spi.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_tim.o : ../stdPeriphLib/src/stm32f10x_tim.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_usart.o : ../stdPeriphLib/src/stm32f10x_usart.c $(all_make_files) |$(BINARYDIR)
-	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
-
-
-$(BINARYDIR)/stm32f10x_wwdg.o : ../stdPeriphLib/src/stm32f10x_wwdg.c $(all_make_files) |$(BINARYDIR)
+$(BINARYDIR)/misc.o : ../STM32F1xxxx/STM32F10x_StdPeriph_Driver/src/misc.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -286,6 +198,10 @@ $(BINARYDIR)/cpp_interface.o : basic_system/cpp_interface/cpp_interface.cpp $(al
 
 
 $(BINARYDIR)/delay.o : basic_system/delay/delay.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/sys.o : basic_system/sys/sys.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 

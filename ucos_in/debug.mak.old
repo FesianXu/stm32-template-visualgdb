@@ -6,7 +6,7 @@ BINARYDIR := Debug
 
 #Additional flags
 PREPROCESSOR_MACROS := DEBUG=1
-INCLUDE_DIRS := basic_system/delay basic_system/sys basic_system/usart
+INCLUDE_DIRS := basic_system/delay basic_system/sys basic_system/usart ../UCOSII/CONFIG ../UCOSII/CORE ../UCOSII/PORT
 LIBRARY_DIRS := 
 LIBRARY_NAMES := 
 ADDITIONAL_LINKER_INPUTS := 
@@ -18,7 +18,7 @@ CXXFLAGS := -ggdb -ffunction-sections -fno-exceptions -fno-rtti -O0
 ASFLAGS := 
 LDFLAGS := -Wl,-gc-sections
 COMMONFLAGS := 
-LINKER_SCRIPT := STM32F103ZE_flash.lds
+LINKER_SCRIPT := C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/LinkerScripts/STM32F103ZE_flash.lds
 
 START_GROUP := -Wl,--start-group
 END_GROUP := -Wl,--end-group

@@ -17,6 +17,8 @@
 *.dep
 
 # workspace files
+ucos_in.v11.suo
+*.suo
 *.v11.suo
 
 # ignore visual gdb cache

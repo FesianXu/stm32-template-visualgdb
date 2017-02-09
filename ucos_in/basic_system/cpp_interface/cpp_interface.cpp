@@ -1,11 +1,4 @@
 #include "cpp_interface.hpp"
-
-void NVIC_Configuration(void)
-{
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	//设置NVIC中断分组2:2位抢占优先级，2位响应优先级
-}
-
-
 /////////////////////////////////////////////////////////////////////////////////
 #ifdef _EXIST_USART_PORT1_
 USART usart1(1,115200) ;

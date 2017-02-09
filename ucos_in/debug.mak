@@ -6,7 +6,7 @@ BINARYDIR := Debug
 
 #Additional flags
 PREPROCESSOR_MACROS := DEBUG=1
-INCLUDE_DIRS := basic_system/delay basic_system/sys basic_system/usart
+INCLUDE_DIRS := basic_system/delay basic_system/sys basic_system/usart ../UCOSII/CONFIG ../UCOSII/CORE ../UCOSII/PORT
 LIBRARY_DIRS := 
 LIBRARY_NAMES := 
 ADDITIONAL_LINKER_INPUTS := 
