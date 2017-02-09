@@ -157,15 +157,7 @@
     <Shortcuts />
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
-  <UserDefinedVariables>
-    <BuildVariable>
-      <Label />
-      <Description />
-      <Value>../</Value>
-      <Name>BSP_ROOT</Name>
-      <PromoteToEnvironment>true</PromoteToEnvironment>
-    </BuildVariable>
-  </UserDefinedVariables>
+  <UserDefinedVariables />
   <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>

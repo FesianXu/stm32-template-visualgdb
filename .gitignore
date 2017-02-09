@@ -18,8 +18,8 @@
 
 # workspace files
 ucos_in.v11.suo
-*.suo
 *.v11.suo
+*.suo
 
 # ignore visual gdb cache
 /ucos_in/VisualGDBCache/

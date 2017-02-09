@@ -329,6 +329,9 @@
 #ifndef STM32F103ZE
 #define STM32F103ZE 1
 #endif
+#ifndef __GXX_RTTI
+#define __GXX_RTTI 1
+#endif
 #ifndef __HQ_IBIT__
 #define __HQ_IBIT__ 0
 #endif
@@ -588,6 +591,9 @@
 #ifndef __INT16_MAX__
 #define __INT16_MAX__ 0x7fff
 #endif
+#ifndef __cpp_rtti
+#define __cpp_rtti 199711
+#endif
 #ifndef __SIZE_TYPE__
 #define __SIZE_TYPE__ unsigned int
 #endif
@@ -749,6 +755,9 @@
 #endif
 #ifndef __UTA_IBIT__
 #define __UTA_IBIT__ 64
+#endif
+#ifndef __EXCEPTIONS
+#define __EXCEPTIONS 1
 #endif
 #ifndef __LDBL_MANT_DIG__
 #define __LDBL_MANT_DIG__ 53
@@ -954,6 +963,9 @@
 #ifndef __SIZEOF_DOUBLE__
 #define __SIZEOF_DOUBLE__ 8
 #endif
+#ifndef __cpp_exceptions
+#define __cpp_exceptions 199711
+#endif
 #ifndef __UFRACT_EPSILON__
 #define __UFRACT_EPSILON__ 0x1P-16UR
 #endif
@@ -1075,6 +1087,10 @@
 
 // --- Include directories begin --- //
 //.
+//C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc
+//C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/StartupFiles
+//C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x
+//C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport
 //g:\arm-eabi-4.4.0\bin\../lib/gcc/arm-eabi/5.3.0/../../../../arm-eabi/include/c++/5.3.0
 //g:\arm-eabi-4.4.0\bin\../lib/gcc/arm-eabi/5.3.0/../../../../arm-eabi/include/c++/5.3.0/arm-eabi/thumb/cortex_m3
 //g:\arm-eabi-4.4.0\bin\../lib/gcc/arm-eabi/5.3.0/../../../../arm-eabi/include/c++/5.3.0/backward
@@ -1085,6 +1101,9 @@
 //basic_system/delay
 //basic_system/sys
 //basic_system/usart
+//../UCOSII/CONFIG
+//../UCOSII/CORE
+//../UCOSII/PORT
 // --- Include directories end --- //
 
 
