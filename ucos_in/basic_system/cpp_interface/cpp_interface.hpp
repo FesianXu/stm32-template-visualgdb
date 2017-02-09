@@ -98,6 +98,6 @@ public:
 	bool isBufCanBeRead ;
 	unsigned char receiveMode ; // 1为\r\n断句， 2为连续接受
 };
-
+// #VisualGDB: AutoSourceFiles		#<--- remove this line to disable auto-updating of SOURCEFILES and EXTERNAL_LIBS
 
 #endif
