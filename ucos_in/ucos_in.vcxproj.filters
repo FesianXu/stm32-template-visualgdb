@@ -179,6 +179,9 @@
     <None Include="STM32F103ZE_flash.lds">
       <Filter>Make files</Filter>
     </None>
+    <None Include="..\STM32F1xxxx\LinkerScripts\STM32F103ZE_flash.lds">
+      <Filter>Make files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic_system\delay\delay.h">
