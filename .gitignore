@@ -22,3 +22,5 @@
 # ignore visual gdb cache
 /ucos_in/VisualGDBCache/
 
+# ignore code db
+/CodeDB
