@@ -4,7 +4,7 @@
 #Use VisualGDB Project Properties dialog or modify Makefile or per-configuration .mak files instead.
 
 #VisualGDB provides BSP_ROOT and TOOLCHAIN_ROOT via environment when running Make. The line below will only be active if GNU Make is started manually.
-BSP_ROOT ?= $(LOCALAPPDATA)/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32
+BSP_ROOT ?= G:/arm-eabi-4.4.0
 EFP_BASE ?= $(LOCALAPPDATA)/VisualGDB/EmbeddedEFPs
 TOOLCHAIN_ROOT ?= G:/arm-eabi-4.4.0
 
@@ -17,17 +17,17 @@ OBJCOPY := $(TOOLCHAIN_ROOT)/bin/arm-eabi-objcopy.exe
 
 #Additional flags
 PREPROCESSOR_MACROS += ARM_MATH_CM3 STM32F103ZE stm32_flash_layout STM32F10X_HD
-INCLUDE_DIRS += . $(BSP_ROOT)/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc $(BSP_ROOT)/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport $(BSP_ROOT)/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x
+INCLUDE_DIRS += . C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/StartupFiles C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport
 LIBRARY_DIRS += 
 LIBRARY_NAMES += compactcpp
 ADDITIONAL_LINKER_INPUTS += 
 MACOS_FRAMEWORKS += 
 LINUX_PACKAGES += 
 
-CFLAGS += 
-CXXFLAGS += 
-ASFLAGS += 
-LDFLAGS +=  
+CFLAGS += -mcpu=cortex-m3 -mthumb
+CXXFLAGS += -mcpu=cortex-m3 -mthumb
+ASFLAGS += -mcpu=cortex-m3 -mthumb
+LDFLAGS += 
 COMMONFLAGS += -mcpu=cortex-m3 -mthumb
-LINKER_SCRIPT := $(BSP_ROOT)/STM32F1xxxx/LinkerScripts/STM32F103ZE_flash.lds
+LINKER_SCRIPT := C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/LinkerScripts/STM32F103ZE_flash.lds
 

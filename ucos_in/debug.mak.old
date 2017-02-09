@@ -14,20 +14,20 @@ MACOS_FRAMEWORKS :=
 LINUX_PACKAGES := 
 
 CFLAGS := -ggdb -ffunction-sections -O0
-CXXFLAGS := -ggdb -ffunction-sections -fno-exceptions -fno-rtti -O0
+CXXFLAGS := -ggdb -ffunction-sections -O0
 ASFLAGS := 
 LDFLAGS := -Wl,-gc-sections
 COMMONFLAGS := 
 LINKER_SCRIPT := C:/Users/Administrator/Desktop/ucos_in/STM32F1xxxx/LinkerScripts/STM32F103ZE_flash.lds
 
-START_GROUP := -Wl,--start-group
-END_GROUP := -Wl,--end-group
+START_GROUP := 
+END_GROUP := 
 
 #Additional options detected from testing the toolchain
 USE_DEL_TO_CLEAN := 1
 CP_NOT_AVAILABLE := 1
 
 ADDITIONAL_MAKE_FILES := stm32.mak
-GENERATE_BIN_FILE := 1
-GENERATE_IHEX_FILE := 1
-GENERATE_MAP_FILE := 1
+GENERATE_BIN_FILE := 0
+GENERATE_IHEX_FILE := 0
+GENERATE_MAP_FILE := 0
