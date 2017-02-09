@@ -161,7 +161,7 @@
     <BuildVariable>
       <Label />
       <Description />
-      <Value>C:\Users\Administrator\Desktop\ucos_in</Value>
+      <Value>../</Value>
       <Name>BSP_ROOT</Name>
       <PromoteToEnvironment>true</PromoteToEnvironment>
     </BuildVariable>

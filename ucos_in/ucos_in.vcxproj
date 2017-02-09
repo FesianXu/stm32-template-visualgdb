@@ -41,8 +41,7 @@
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
     <NMakeOutput>$(ProjectDir)ucos_in-Debug.vgdbsettings</NMakeOutput>
-    <IncludePath>
-    </IncludePath>
+    <IncludePath>C:\Users\Administrator\Desktop\ucos_in\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc;$(IncludePath)</IncludePath>
     <ReferencePath />
     <LibraryPath />
     <SourcePath>C:\Users\Administrator\Desktop\ucos_in\stdPeriphLib\inc;$(SourcePath)</SourcePath>
