@@ -63,6 +63,12 @@
     <Filter Include="Header files\Device-specific files\StdPeriph">
       <UniqueIdentifier>{59312f01-42bb-4a23-937f-26e6fc9f1761}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source files\basic_system\sys">
+      <UniqueIdentifier>{1dc44894-ffd8-4b07-9128-b6d1f7dd9739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\basic_system\sys">
+      <UniqueIdentifier>{1e124ada-34dd-4fef-ae69-3fe6db8e2c2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="system_stm32f10x.c">
@@ -80,79 +86,82 @@
     <ClCompile Include="software\cpp_buf\cpp_buf.cpp">
       <Filter>Source files\software\cpp_buf</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\StartupFiles\startup_stm32f103xe.c">
+    <ClCompile Include="basic_system\sys\sys.c">
+      <Filter>Source files\basic_system\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F1xxxx\StartupFiles\startup_stm32f103xe.c">
       <Filter>Source files\Device-specific files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\misc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c">
-      <Filter>Source files\Device-specific files\StdPeriph</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c">
-      <Filter>Source files\Device-specific files\StdPeriph</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.c">
+    <ClCompile Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c">
       <Filter>Source files\Device-specific files\StdPeriph</Filter>
     </ClCompile>
   </ItemGroup>
@@ -193,82 +202,85 @@
     <ClInclude Include="software\cpp_buf\cpp_buf.hpp">
       <Filter>Header files\software\cpp_buf</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\misc.h">
+    <ClInclude Include="basic_system\sys\sys.h">
+      <Filter>Header files\basic_system\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h">
+    <ClInclude Include="..\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h">
+    <ClInclude Include="..\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\misc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h">
+    <ClInclude Include="..\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h">
       <Filter>Header files\Device-specific files\StdPeriph</Filter>
     </ClInclude>
   </ItemGroup>
