@@ -2,6 +2,10 @@
 /Debug
 /ucos_in/Debug
 
+# ignore release files
+/Release
+/ucos_in/Release
+
 
 # ignore visual studio's go-back files
 *.sdf
@@ -13,6 +17,11 @@
 *.dep
 
 # workspace files
-*.suo
+*.v11.suo
+
+# ignore visual gdb cache
+/ucos_in/VisualGDBCache/
 
 
+# ignore linker files
+*.lds
